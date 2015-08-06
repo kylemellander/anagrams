@@ -1,0 +1,6 @@
+<h2>Here are all the anagrams for <%= @original_word %>.</h2>
+<ul>
+  <% @results.each { |word| %>
+    <li><%= word %></li>
+  <% } %>
+</ul>
