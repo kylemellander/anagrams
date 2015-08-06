@@ -1,14 +1,14 @@
 class String
   def anagram(words=nil)
     if words == nil
-      return "There are no anagrams."
+      return "You didn't input any possible anagrams."
     end
 
     anagrams = []
 
-    origin_word_letters = self.split("").sort()
+    origin_word_letters = self.downcase.split("").sort()
     words.each { |word|
-      letters = word.split("").sort()
+      letters = word.downcase.split("").sort()
       anagrams << word if origin_word_letters == letters
     }
 
