@@ -21,4 +21,8 @@ describe('/') {
   it("returns proper anagrams in mixed case inputs") {
     expect("FoX".anagram(["xFo", "fff", "asg"])).to(eq(["xFo"]))
   }
+
+  it("returns proper anagrams when there are multiple matches") {
+    expect("FoX".anagram(["xFo", "oxf", "asg"])).to(eq(["xFo", "oxf"]))
+  }
 }
