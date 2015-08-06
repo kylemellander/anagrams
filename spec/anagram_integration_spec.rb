@@ -13,7 +13,6 @@ describe('/', {:type => :feature}) {
     fill_in("origin_word", :with => "Andrew")
     fill_in("possible_anagrams", :with => "warden")
     click_button('Go!')
-    # save_and_open_page
     expect(page).to have_content("warden")
   }
 }
