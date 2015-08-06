@@ -1,6 +1,6 @@
 <h1>Anagrams!</h1>
 <div class="container ak-form">
-  <form action='anagrams'>
+  <form action='/anagrams'>
     <div class="form-group">
       <label for='origin_word'>Enter a word here:</label>
       <input id='origin_word' name='origin_word' class="form-control<% if @original_word_error == 1 %> ak-error<% end %>"<% if @original_word != nil %> value="<%= @original_word %>"<% end %> type='text' placeholder="Enter a word">
